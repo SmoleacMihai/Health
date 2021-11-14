@@ -1,0 +1,138 @@
+body{
+    background-color: #2B2B2B;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+header#main_h{
+    margin-top: 25px;
+    margin-left: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header#main_h figure{
+   display: grid;
+   grid-template-columns: 45px auto;
+   margin: 0;
+}
+
+header#main_h figure figcaption{
+    font-family: poppins ;
+    font-size: 34px;
+    font-weight: 400;
+    width: 300px;
+    margin-left: 15px;
+    color: white;
+}
+
+header#main_h figure img{
+    width: 45px;
+    height: 45px;
+}
+
+header#main_h nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+}
+
+header#main_h nav a{
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+header#main_h nav a:hover{ 
+  background: linear-gradient(135deg, #50D8A7 20%, #FBFF3F 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+section#main_s{
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section#main_s img{
+    width:500px ;
+    height: 400px; 
+}
+
+section#main_s div{
+    display: grid;
+    grid-template-rows: 90px 250px;
+}
+
+section#main_s div h1{
+    font-size: 54px;
+    font-family: poppins;
+    font-weight: 400;
+    margin: 0px;
+    color: white;
+}
+
+section#main_s div h3{
+    margin: 0%;
+    color: white;
+    font-size: 30px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: normal;
+}
+
+section#main_s div.button{
+    margin: 0%;
+    color: white;
+    display: grid;
+    font-size: 32px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: normal;
+    border: none;
+    border-radius: 10;
+    background-color: #50D8A7;
+    height: 100px;
+    width: 300px;
+    align-self: center;
+    text-align: center;
+}
+
+section#main_s div a{
+    margin: 0%;
+    color: #ffffff;
+
+    font-size: 32px;
+    font-family: poppins;
+
+    border: 1px;
+    border-radius: 10;
+    background-color: #50D8A7;
+ 
+    width: 300px;
+    text-align: center;
+}
+
+section#main_s div a:hover{
+    margin: 0%;
+    color: #ffffff;
+
+    font-size: 32px;
+    font-family: poppins;
+
+    border: 1px;
+    border-radius: 10;
+    background-color: #FBFF3F;
+ 
+    width: 300px;
+    text-align: center;
+}
+
+
+
