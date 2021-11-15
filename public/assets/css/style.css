@@ -118,5 +118,9 @@ section#main_s div a:hover{
     text-align: center;
 }
 
+body img#crug{
+    position: absolute;
+    transform: translate(1000px, -257px);
+}
 
 

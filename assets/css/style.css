@@ -100,10 +100,10 @@ section#main_s div a{
     border: 1px;
     border-radius: 0%;
     background-color: #50D8A7;
-    width: 300px;
+    width: 270px;
     text-align: center;
     border-radius: 8px;
-    transition: border-radius 2s;
+    transition: border-radius 1.5s;
 }
 
 section#main_s div a:hover{
@@ -114,9 +114,28 @@ section#main_s div a:hover{
     border: 1px;
     border-radius: 24px;
     background-color: #FBFF3F;
-    width: 300px;
+    width: 270px;
     text-align: center;
 }
 
+body img#crug{
+    position: absolute;
+    transform: translate(1000px, -257px);
+}
 
+body div#features_buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
 
+body div#features_buttons h2{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 35px;
+    margin-left: 10px;
+    font-family: poppins;
+    font-size: 44px;
+    font-weight: 400;
+    color: white;
+}
