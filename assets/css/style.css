@@ -69,9 +69,8 @@ section#main_s img{
 
 section#main_s div{
     display: grid;
-    grid-template-rows: 90px 250px;
+    grid-template-rows: 90px 250px; 
 }
-
 
 section#main_s div h1{
     font-size: 54px;
@@ -89,8 +88,6 @@ section#main_s div h3{
     font-style: normal;
     font-weight: normal;
 }
-
-
 
 section#main_s div a{
     margin-left: 3px;
@@ -118,24 +115,96 @@ section#main_s div a:hover{
     text-align: center;
 }
 
-body img#crug{
+body img#crug1{
     position: absolute;
     transform: translate(1000px, -257px);
+}
+
+body img#crug2{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform: translate(900px, -800px);
+    z-index: -1;
+}
+
+body img#crug3{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transform: translate(-500px, -650px);
+    z-index: -1;
 }
 
 body div#features_buttons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
+    place-items: center;  
+    margin-bottom: 200px;
 }
 
-body div#features_buttons h2{
+body div#features_buttons h2#head_txt{
     grid-column-start: 1;
     grid-column-end: 4;
     margin-top: 35px;
-    margin-left: 10px;
+    margin-left: 70px;
     font-family: poppins;
     font-size: 44px;
     font-weight: 400;
     color: white;
+    justify-self: start;
+}
+
+body div#features_buttons a figure{
+    background-color: #1B1B1B;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+    
+    place-items: center;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+body div#features_buttons a figure:hover{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 300px;
+    height: 300px;
+    
+    place-items: center;
+    cursor: pointer;
+}
+
+body div#features_buttons a figure img{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+}
+
+body div#features_buttons a figure:hover img{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    filter: invert(100%);
+}
+
+body div#features_buttons a figure figcaption{
+    text-align: center;
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+body div#features_buttons a figure:hover figcaption{
+    text-align: center;
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2B2B2B;
 }
