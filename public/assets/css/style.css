@@ -1,12 +1,15 @@
 body{
     background-color: #2B2B2B;
-    width: 1200px;
-    margin: 0 auto;
+    width: 1520px;
+    margin:0%;
+    overflow-x: hidden;
 }
 
 a{
     text-decoration: none;
 }
+
+/*First page*/
 
 header#main_h nav a#selected_page{
     color: #FBFF3F;
@@ -14,7 +17,7 @@ header#main_h nav a#selected_page{
 
 header#main_h{
     margin-top: 25px;
-    margin-left: 10px;
+    margin-left: 40px;
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -65,13 +68,13 @@ section#main_s{
 section#main_s img{
     width:500px ;
     height: 400px; 
+    margin-left: 70px;
 }
 
 section#main_s div{
     display: grid;
-    grid-template-rows: 90px 250px;
+    grid-template-rows: 90px 250px; 
 }
-
 
 section#main_s div h1{
     font-size: 54px;
@@ -90,8 +93,6 @@ section#main_s div h3{
     font-weight: normal;
 }
 
-
-
 section#main_s div a{
     margin-left: 3px;
     color: #ffffff;
@@ -100,27 +101,352 @@ section#main_s div a{
     border: 1px;
     border-radius: 0%;
     background-color: #50D8A7;
-    width: 300px;
+    width: 270px;
     text-align: center;
     border-radius: 8px;
-    transition: border-radius 2s;
+    transition: border-radius 1.5s;
 }
 
 section#main_s div a:hover{
     margin-left: 3px;
-    color: #ffffff;
+    color: black;
     font-size: 32px;
     font-family: poppins;
     border: 1px;
     border-radius: 24px;
     background-color: #FBFF3F;
-    width: 300px;
+    width: 270px;
     text-align: center;
 }
 
-body img#crug{
+body img#crug1{
     position: absolute;
-    transform: translate(1000px, -257px);
+    transform: translate(1167px, -257px);
 }
 
+/*Second page*/
 
+body div#features_buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    place-items: center;  
+    margin-bottom: 280px;
+}
+
+body div#features_buttons h2#head_txt{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 35px;
+    margin-left: 100px;
+    font-family: poppins;
+    font-size: 44px;
+    font-weight: 400;
+    color: white;
+    justify-self: start;
+}
+
+body div#features_buttons a figure{
+    background-color: #1B1B1B;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+    border:1px;
+    border-radius: 0px;
+    place-items: center;
+    cursor: pointer;
+    transition: background-color .3s;
+    transition: border-radius .7s;
+}
+
+body div#features_buttons a figure:hover{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 300px;
+    height: 300px;
+    border-radius: 25%;
+    place-items: center;
+    cursor: pointer;
+}
+
+body div#features_buttons a figure img{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+}
+
+body div#features_buttons a figure:hover img{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    filter: invert(100%);
+}
+
+body div#features_buttons a figure figcaption{
+    text-align: center;
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+body div#features_buttons a figure:hover figcaption{
+    text-align: center;
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2B2B2B;
+}
+
+/*Section "what is meditation"*/
+
+body section#section_definition{
+    background-color: #50D8A7;
+    width: 100%;
+}
+
+body section#section_definition div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+body section#section_definition div h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 35px;
+    margin-left: 100px;
+    font-family: poppins;
+    font-size: 44px;
+    font-weight: 400;
+    color: white;
+    justify-self: start;
+}
+
+body section#section_definition div p{
+    margin-left: 100px;
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    justify-self: start;
+    margin-top: 0%;
+}
+
+body section#section_definition div img{
+    width: 600px;
+    height: 400px;
+    place-self: center;
+}
+
+body section#section_definition div a{
+    color: black;
+    background-color: #FBFF3F;
+    width: 250px;
+    height: 55px;
+    margin-left: 100px;
+    font-size: 32px;
+    font-family: poppins;
+    border: 1px;
+    border-radius: 0%;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color .4s;
+    transition: color .4s;
+}
+
+body section#section_definition div a:hover{
+    color: white;
+    background-color: #1B1B1B;
+    width: 250px;
+    height: 55px;
+    margin-left: 100px;
+    font-size: 32px;
+    font-family: poppins;
+    border: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/*Section methods of meditation*/
+
+body section#section_methods{
+    background-color: #FBFF3F;
+}
+
+body section#section_methods div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr repeat(3, 2fr) 1fr;
+    row-gap: 55px;
+}
+
+body section#section_methods h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 35px;
+    margin-left: 100px;
+    font-family: poppins;
+    font-size: 44px;
+    font-weight: 400;
+    color: black;
+    justify-self: start;
+}
+
+body section#section_methods p{
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    justify-self: start;
+    margin-top: 0%;
+}
+
+body section#section_methods p.container-right{
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    justify-self: start;
+    margin-top: 0%;
+    margin-right: 100px ;
+}
+
+body section#section_methods p.container-left{
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    justify-self: start;
+    margin-top: 0%;
+    margin-left: 100px ;
+}
+
+body section#section_methods div img.sec2_img{
+    width: 500px;
+    height: 280px;
+    place-self: center;
+}
+
+body section#section_methods div a{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    place-self: center;
+    color: black;
+    background-color: #50D8A7;
+    width: 250px;
+    height: 55px;
+    font-size: 32px;
+    font-family: poppins;
+    border: 1px;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color .4s;
+    transition: color .4s;
+}
+
+body section#section_methods div a:hover{
+    color: white;
+    background-color: #1B1B1B;
+    width: 250px;
+    height: 55px;
+    font-size: 32px;
+    font-family: poppins;
+    border: 20px;
+    border-radius: 0%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/*section benefits*/
+body section#section_benefits{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+body section#section_benefits div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr 125px;
+    row-gap: 55px;
+}
+
+body section#section_benefits h2{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-top: 35px;
+    margin-left: 100px;
+    font-family: poppins;
+    font-size: 44px;
+    font-weight: 400;
+    color: black;
+    justify-self: start;
+}
+
+body section#section_benefits div figure{
+    display: grid;
+    grid-template-rows: 1fr 160px;
+    row-gap: 29px;
+}
+
+body section#section_benefits div figure img{
+    width : 250px;
+    height: 170px;
+    place-self: center;
+}
+
+body section#section_benefits div figure figcaption{
+    text-align: center;
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+body section#section_benefits div a{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-self: end;   
+    margin-right: 100px;
+    color: white;
+    background-color: #1B1B1B;
+    width: 250px;
+    height: 55px;
+    font-size: 32px;
+    font-family: poppins;
+    border: 1px; 
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color .4s;
+    transition: color .4s;
+}
+
+body section#section_benefits div a:hover{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-self: end;
+    margin-right: 100px;
+    color: black;
+    background-color: #50D8A7;
+    width: 250px;
+    height: 55px;
+    font-size: 32px;
+    font-family: poppins;
+    border: 1px;
+    text-align: center;
+    border-radius: 8px; 
+}
+
+#scroll_up{
+    top: 50px;
+    right: 10px;
+    position: fixed;
+    width: 80px;
+    height: 20px;
+    font-size: 26px;
+    font-family: poppins;
+    background-color: #e62739;
+}

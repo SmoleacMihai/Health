@@ -9,6 +9,8 @@ a{
     text-decoration: none;
 }
 
+/*First page*/
+
 header#main_h nav a#selected_page{
     color: #FBFF3F;
 }
@@ -66,6 +68,7 @@ section#main_s{
 section#main_s img{
     width:500px ;
     height: 400px; 
+    margin-left: 70px;
 }
 
 section#main_s div{
@@ -106,7 +109,7 @@ section#main_s div a{
 
 section#main_s div a:hover{
     margin-left: 3px;
-    color: #ffffff;
+    color: black;
     font-size: 32px;
     font-family: poppins;
     border: 1px;
@@ -121,21 +124,7 @@ body img#crug1{
     transform: translate(1167px, -257px);
 }
 
-body img#crug2{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    transform: translate(900px, -800px);
-    z-index: -1;
-}
-
-body img#crug3{
-    position: relative;
-    width: 400px;
-    height: 400px;
-    transform: translate(-500px, -650px);
-    z-index: -1;
-}
+/*Second page*/
 
 body div#features_buttons{
     display: grid;
@@ -164,10 +153,12 @@ body div#features_buttons a figure{
     width: 300px;
     height: 300px;
     margin: 0%;
-    
+    border:1px;
+    border-radius: 0px;
     place-items: center;
     cursor: pointer;
     transition: background-color .3s;
+    transition: border-radius .7s;
 }
 
 body div#features_buttons a figure:hover{
@@ -176,7 +167,7 @@ body div#features_buttons a figure:hover{
     grid-template-rows: 1fr 1fr;
     width: 300px;
     height: 300px;
-    
+    border-radius: 25%;
     place-items: center;
     cursor: pointer;
 }
@@ -210,18 +201,20 @@ body div#features_buttons a figure:hover figcaption{
     color: #2B2B2B;
 }
 
-body section.section_definition{
+/*Section "what is meditation"*/
+
+body section#section_definition{
     background-color: #50D8A7;
     width: 100%;
 }
 
-body section.section_definition div{
+body section#section_definition div{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
 }
 
-body section.section_definition div h2{
+body section#section_definition div h2{
     grid-column-start: 1;
     grid-column-end: 3;
     margin-top: 35px;
@@ -233,7 +226,7 @@ body section.section_definition div h2{
     justify-self: start;
 }
 
-body section.section_definition div p{
+body section#section_definition div p{
     margin-left: 100px;
     font-family: poppins;
     font-size: 24px;
@@ -243,13 +236,13 @@ body section.section_definition div p{
     margin-top: 0%;
 }
 
-body section.section_definition div img{
+body section#section_definition div img{
     width: 600px;
     height: 400px;
     place-self: center;
 }
 
-body section.section_definition div a{
+body section#section_definition div a{
     color: black;
     background-color: #FBFF3F;
     width: 250px;
@@ -265,7 +258,7 @@ body section.section_definition div a{
     transition: color .4s;
 }
 
-body section.section_definition div a:hover{
+body section#section_definition div a:hover{
     color: white;
     background-color: #1B1B1B;
     width: 250px;
@@ -274,22 +267,24 @@ body section.section_definition div a:hover{
     font-size: 32px;
     font-family: poppins;
     border: 20px;
-    border-radius: 0%;
     text-align: center;
     border-radius: 8px;
 }
 
-body section.section_methods{
+/*Section methods of meditation*/
+
+body section#section_methods{
     background-color: #FBFF3F;
 }
 
-body section.section_methods div{
+body section#section_methods div{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr repeat(3, 2fr) 1fr;
+    row-gap: 55px;
 }
 
-body section.section_methods h2{
+body section#section_methods h2{
     grid-column-start: 1;
     grid-column-end: 3;
     margin-top: 35px;
@@ -301,12 +296,157 @@ body section.section_methods h2{
     justify-self: start;
 }
 
-body section.section_methods p{
+body section#section_methods p{
     font-family: poppins;
     font-size: 24px;
     font-weight: 400;
     color: black;
     justify-self: start;
     margin-top: 0%;
-    
+}
+
+body section#section_methods p.container-right{
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    justify-self: start;
+    margin-top: 0%;
+    margin-right: 100px ;
+}
+
+body section#section_methods p.container-left{
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    justify-self: start;
+    margin-top: 0%;
+    margin-left: 100px ;
+}
+
+body section#section_methods div img.sec2_img{
+    width: 500px;
+    height: 280px;
+    place-self: center;
+}
+
+body section#section_methods div a{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    place-self: center;
+    color: black;
+    background-color: #50D8A7;
+    width: 250px;
+    height: 55px;
+    font-size: 32px;
+    font-family: poppins;
+    border: 1px;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color .4s;
+    transition: color .4s;
+}
+
+body section#section_methods div a:hover{
+    color: white;
+    background-color: #1B1B1B;
+    width: 250px;
+    height: 55px;
+    font-size: 32px;
+    font-family: poppins;
+    border: 20px;
+    border-radius: 0%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/*section benefits*/
+body section#section_benefits{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+body section#section_benefits div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr 125px;
+    row-gap: 55px;
+}
+
+body section#section_benefits h2{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-top: 35px;
+    margin-left: 100px;
+    font-family: poppins;
+    font-size: 44px;
+    font-weight: 400;
+    color: black;
+    justify-self: start;
+}
+
+body section#section_benefits div figure{
+    display: grid;
+    grid-template-rows: 1fr 160px;
+    row-gap: 29px;
+}
+
+body section#section_benefits div figure img{
+    width : 250px;
+    height: 170px;
+    place-self: center;
+}
+
+body section#section_benefits div figure figcaption{
+    text-align: center;
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+body section#section_benefits div a{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-self: end;   
+    margin-right: 100px;
+    color: white;
+    background-color: #1B1B1B;
+    width: 250px;
+    height: 55px;
+    font-size: 32px;
+    font-family: poppins;
+    border: 1px; 
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color .4s;
+    transition: color .4s;
+}
+
+body section#section_benefits div a:hover{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-self: end;
+    margin-right: 100px;
+    color: black;
+    background-color: #50D8A7;
+    width: 250px;
+    height: 55px;
+    font-size: 32px;
+    font-family: poppins;
+    border: 1px;
+    text-align: center;
+    border-radius: 8px; 
+}
+
+#scroll_up{
+    top: 50px;
+    right: 10px;
+    position: fixed;
+    width: 80px;
+    height: 20px;
+    font-size: 26px;
+    font-family: poppins;
+    background-color: #e62739;
 }
