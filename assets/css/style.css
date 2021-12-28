@@ -5,6 +5,10 @@ body{
     overflow-x: hidden;
 }
 
+a, div, h1, h2, h3, p{
+    font-family: poppins;
+}
+
 a{
     text-decoration: none;
 }
@@ -19,7 +23,7 @@ header#main_h{
     margin-top: 25px;
     margin-left: 40px;
     display:grid;
-    grid-template-columns: 720px 760px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 header#main_h a figure{
@@ -30,7 +34,6 @@ header#main_h a figure{
 }
 
 header#main_h a figure figcaption{
-    font-family: poppins ;
     font-size: 34px;
     font-weight: 400;
     width: 270px;
@@ -52,7 +55,6 @@ header#main_h nav{
 }
 
 header#main_h nav a{
-    font-family: poppins;
     font-size: 20px;
     font-weight: 400;
     color: white;
@@ -69,7 +71,7 @@ section#main_s{
 }
 
 section#main_s img{
-    width:500px ;
+    width: 500px;
     height: 400px; 
     margin-left: 70px;
 }
@@ -77,11 +79,11 @@ section#main_s img{
 section#main_s div{
     display: grid;
     grid-template-rows: 90px 250px; 
+    margin-left: 15px;
 }
 
 section#main_s div h1{
     font-size: 54px;
-    font-family: poppins;
     font-weight: 400;
     margin: 0px;
     color: white;
@@ -91,7 +93,6 @@ section#main_s div h3{
     margin: 0%;
     color: white;
     font-size: 30px;
-    font-family: poppins;
     font-style: normal;
     font-weight: normal;
 }
@@ -100,7 +101,6 @@ section#main_s div a{
     margin-left: 3px;
     color: #ffffff;
     font-size: 32px;
-    font-family: poppins;
     border: 1px;
     border-radius: 0%;
     background-color: #50D8A7;
@@ -111,15 +111,10 @@ section#main_s div a{
 }
 
 section#main_s div a:hover{
-    margin-left: 3px;
     color: black;
-    font-size: 32px;
-    font-family: poppins;
     border: 1px;
     border-radius: 24px;
     background-color: #FBFF3F;
-    width: 270px;
-    text-align: center;
 }
 
 body img#crug1{
@@ -142,7 +137,6 @@ body div#features_buttons h2#head_txt{
     grid-column-end: 4;
     margin-top: 35px;
     margin-left: 100px;
-    font-family: poppins;
     font-size: 44px;
     font-weight: 400;
     color: white;
@@ -182,25 +176,17 @@ body div#features_buttons a figure img{
 }
 
 body div#features_buttons a figure:hover img{
-    width: 150px;
-    height: 150px;
-    margin-top: 30px;
     filter: invert(100%);
 }
 
 body div#features_buttons a figure figcaption{
     text-align: center;
-    font-family: poppins;
     font-size: 30px;
     font-weight: 700;
     color: white;
 }
 
 body div#features_buttons a figure:hover figcaption{
-    text-align: center;
-    font-family: poppins;
-    font-size: 30px;
-    font-weight: 700;
     color: #2B2B2B;
 }
 
@@ -222,7 +208,6 @@ body section#section_definition div h2{
     grid-column-end: 3;
     margin-top: 35px;
     margin-left: 100px;
-    font-family: poppins;
     font-size: 44px;
     font-weight: 400;
     color: white;
@@ -231,7 +216,6 @@ body section#section_definition div h2{
 
 body section#section_definition div p{
     margin-left: 100px;
-    font-family: poppins;
     font-size: 24px;
     font-weight: 400;
     color: white;
@@ -264,14 +248,6 @@ body section#section_definition div a{
 body section#section_definition div a:hover{
     color: white;
     background-color: #1B1B1B;
-    width: 250px;
-    height: 55px;
-    margin-left: 100px;
-    font-size: 32px;
-    font-family: poppins;
-    border: 20px;
-    text-align: center;
-    border-radius: 8px;
 }
 
 /*Section methods of meditation*/
@@ -292,7 +268,6 @@ body section#section_methods h2{
     grid-column-end: 3;
     margin-top: 35px;
     margin-left: 100px;
-    font-family: poppins;
     font-size: 44px;
     font-weight: 400;
     color: black;
@@ -300,7 +275,6 @@ body section#section_methods h2{
 }
 
 body section#section_methods p{
-    font-family: poppins;
     font-size: 24px;
     font-weight: 400;
     color: black;
@@ -309,7 +283,6 @@ body section#section_methods p{
 }
 
 body section#section_methods p.container-right{
-    font-family: poppins;
     font-size: 24px;
     font-weight: 400;
     color: black;
@@ -319,7 +292,6 @@ body section#section_methods p.container-right{
 }
 
 body section#section_methods p.container-left{
-    font-family: poppins;
     font-size: 24px;
     font-weight: 400;
     color: black;
@@ -343,7 +315,6 @@ body section#section_methods div a{
     width: 250px;
     height: 55px;
     font-size: 32px;
-    font-family: poppins;
     border: 1px;
     text-align: center;
     border-radius: 8px;
@@ -354,14 +325,6 @@ body section#section_methods div a{
 body section#section_methods div a:hover{
     color: white;
     background-color: #1B1B1B;
-    width: 250px;
-    height: 55px;
-    font-size: 32px;
-    font-family: poppins;
-    border: 20px;
-    border-radius: 0%;
-    text-align: center;
-    border-radius: 8px;
 }
 
 /*section benefits*/
@@ -382,7 +345,6 @@ body section#section_benefits h2{
     grid-column-end: 5;
     margin-top: 35px;
     margin-left: 100px;
-    font-family: poppins;
     font-size: 44px;
     font-weight: 400;
     color: black;
@@ -403,7 +365,6 @@ body section#section_benefits div figure img{
 
 body section#section_benefits div figure figcaption{
     text-align: center;
-    font-family: poppins;
     font-size: 30px;
     font-weight: 700;
     color: black;
@@ -419,7 +380,6 @@ body section#section_benefits div a{
     width: 250px;
     height: 55px;
     font-size: 32px;
-    font-family: poppins;
     border: 1px; 
     text-align: center;
     border-radius: 8px;
@@ -428,19 +388,8 @@ body section#section_benefits div a{
 }
 
 body section#section_benefits div a:hover{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    justify-self: end;
-    margin-right: 100px;
     color: black;
     background-color: #50D8A7;
-    width: 250px;
-    height: 55px;
-    font-size: 32px;
-    font-family: poppins;
-    border: 1px;
-    text-align: center;
-    border-radius: 8px; 
 }
 
 footer{
@@ -461,8 +410,26 @@ section#questionSearch{
 section#questionSearch input{
     height: 35px;
     border-radius: 10px;
-    font-family: poppins;
     background-color: #1B1B1B;
     color:white;
     font-size: 20px;
+}
+
+section#questionSearch a#yourQuestion{
+    justify-self: flex-end;
+    width: 250px;
+    height: 50px;
+    font-size: 26px;
+    font-family: poppins;
+    border: 1px;
+    color: white;
+    background-color: #50D8A7;
+    text-align: center;
+    border-radius: 8px;
+    transition: all, .1s;
+}
+
+section#questionSearch a#yourQuestion:hover{
+    color: white;
+    background-color: #1B1B1B;
 }
