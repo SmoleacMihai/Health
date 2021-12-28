@@ -22,23 +22,28 @@ header#main_h{
     grid-template-columns: 720px 760px;
 }
 
-header#main_h figure{
-   display: grid;
-   grid-template-columns: 45px auto;
-   margin: 0%;
-   margin-left: 65px;
+header#main_h a{
+    width: 315px;
+    margin-left: 65px;
 }
 
-header#main_h figure figcaption{
+header#main_h a figure{
+   display: grid;
+   grid-template-columns: 45px 280px;
+   margin: 0%;
+   width: 315px;
+}
+
+header#main_h a figure figcaption{
     font-family: poppins ;
     font-size: 34px;
     font-weight: 400;
-    width: 300px;
+    width: 270px;
     margin-left: 15px;
     color: white;
 }
 
-header#main_h figure img{
+header#main_h a figure img{
     width: 45px;
     height: 45px;
 }
