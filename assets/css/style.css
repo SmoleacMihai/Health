@@ -22,11 +22,6 @@ header#main_h{
     grid-template-columns: 720px 760px;
 }
 
-header#main_h a{
-    width: 315px;
-    margin-left: 65px;
-}
-
 header#main_h a figure{
    display: grid;
    grid-template-columns: 45px 280px;
@@ -52,6 +47,8 @@ header#main_h nav{
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
+    justify-content: start;
+    column-gap: 80px;
 }
 
 header#main_h nav a{
