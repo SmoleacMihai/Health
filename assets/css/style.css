@@ -48,7 +48,7 @@ header#main_h nav{
     grid-template-columns: auto auto auto;
     align-items: center;
     justify-content: start;
-    column-gap: 80px;
+    column-gap: 100px;
 }
 
 header#main_h nav a{
@@ -441,4 +441,9 @@ body section#section_benefits div a:hover{
     border: 1px;
     text-align: center;
     border-radius: 8px; 
+}
+
+footer{
+    width: 100%;
+    background-color: #2B2B2B;
 }
