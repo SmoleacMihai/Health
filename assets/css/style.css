@@ -447,3 +447,22 @@ footer{
     width: 100%;
     background-color: #2B2B2B;
 }
+
+/*Q&A page*/
+
+section#questionSearch{
+    margin-top: 30px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 720px 1fr;
+    grid-template-rows: repeat(6, auto);
+}
+
+section#questionSearch input{
+    height: 35px;
+    border-radius: 10px;
+    font-family: poppins;
+    background-color: #1B1B1B;
+    color:white;
+    font-size: 20px;
+}
