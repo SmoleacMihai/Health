@@ -426,6 +426,7 @@ section#questionSearch a#yourQuestion{
     background-color: #50D8A7;
     text-align: center;
     border-radius: 8px;
+    margin-right: 30px;
     transition: all, .1s;
 }
 
