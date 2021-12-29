@@ -417,8 +417,7 @@ section#questionSearch input{
 }
 
 section#questionSearch input:focus{
-    outline: none;
-    border-color: #1B1B1B;
+  
 }
 
 section#questionSearch a#yourQuestion{
@@ -426,7 +425,6 @@ section#questionSearch a#yourQuestion{
     width: 250px;
     height: 45px;
     font-size: 26px;
-    font-family: poppins;
     border: 1px;
     color: white;
     background-color: #50D8A7;
@@ -438,3 +436,20 @@ section#questionSearch a#yourQuestion{
 section#questionSearch a#yourQuestion:hover{
     background-color: #1B1B1B;
 }
+
+[type="text"] {
+    padding: 4px;
+    -webkit-box-shadow: 0 0 3px 2px #1B1B1B;
+    -moz-box-shadow: 0 0 3px 2px #1B1B1B;
+    box-shadow: 0 0 3px 2px #1B1B1B;
+    border: 1px solid gray; 
+    transition: all .3s;
+   }
+   [type="text"]:focus {
+    outline: none; 
+    border: 2px solid;
+    -webkit-box-shadow: 0 0 3px 2px #50D8A7;
+    -moz-box-shadow: 0 0 3px 2px #50D8A7;
+    box-shadow: 0 0 3px 2px #50D8A7;
+    border-color: #50D8A7;
+   }
