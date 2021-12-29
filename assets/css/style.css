@@ -404,7 +404,6 @@ section#questionSearch{
     margin-left: 40px;
     display: grid;
     grid-template-columns: 720px 1fr;
-    grid-template-rows: repeat(6, auto);
 }
 
 section#questionSearch input{
@@ -414,10 +413,7 @@ section#questionSearch input{
     color:white;
     font-size: 20px;
     border-color: none;
-}
-
-section#questionSearch input:focus{
-  
+    margin-left: 60px;
 }
 
 section#questionSearch a#yourQuestion{
@@ -452,4 +448,15 @@ section#questionSearch a#yourQuestion:hover{
     -moz-box-shadow: 0 0 3px 2px #50D8A7;
     box-shadow: 0 0 3px 2px #50D8A7;
     border-color: #50D8A7;
+   }
+
+   #popularQuestionTitle{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 35px;
+    margin-left: 60px;
+    font-size: 44px;
+    font-weight: 400;
+    color: white;
+    justify-self: start;
    }
