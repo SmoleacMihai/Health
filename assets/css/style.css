@@ -505,7 +505,6 @@ section#questionSearch a#yourQuestion:hover{
     margin-top: 100px;
     width: 70%;
     place-items: center;
-    background-color: rgba(128, 128, 128, 0.5);
     border: 2px solid white;
 }
 
