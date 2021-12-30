@@ -499,3 +499,17 @@ section#questionSearch a#yourQuestion:hover{
 }
 
 /*Random advice page*/
+#randomSection{
+    display: grid;
+    margin: auto;
+    margin-top: 100px;
+    width: 70%;
+    place-items: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 2px solid white;
+}
+
+.text-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
