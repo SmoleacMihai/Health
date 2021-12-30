@@ -7,6 +7,4 @@ for (var i = 0; i < 9; i++) {
     cleaner = document.getElementById("content"+i)
     cleaner.style.display = "none";
  }
-function divDisplay(){
-    let 
-}
+
