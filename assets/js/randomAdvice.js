@@ -7,7 +7,7 @@ for (var i = 0; i < 11; i++) {
     cleaner.style.display = "none";
  }
 
-let usedRandom = 1
+let usedRandom = 11
 let curentRandom = 0
 
  function unhider(){
@@ -16,12 +16,12 @@ let curentRandom = 0
     curentRandom = getRandomNumberBetween(1,10)
     while(curentRandom == usedRandom){
         curentRandom = getRandomNumberBetween(1,10)
-        //console.log("There was a identical number")
+        console.log("There was a identical number")
     }
     element = document.getElementById("content"+curentRandom)
     element.style.display = "block";
-    // console.log("Function did something")
-    // console.log(curentRandom)
+    console.log("Function did something")
+    console.log(curentRandom)
     usedRandom = curentRandom
  }
  document.getElementById("randomButton").onclick = unhider() 

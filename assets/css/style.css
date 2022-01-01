@@ -496,12 +496,13 @@ section#questionSearch a#yourQuestion:hover{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 80%;
+    height: 170px;
     color: white;
     text-align: center;
 }
 
-.text-box#h2{
-
+.text-box h2{
+    font-size: 32px;
 }
 
 #randomButton{
@@ -513,7 +514,7 @@ section#questionSearch a#yourQuestion:hover{
     padding-bottom: 10px;
     font-size: 28px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-top: 20px;
     text-transform: uppercase;
     transition: .5s;
