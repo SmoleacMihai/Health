@@ -235,14 +235,12 @@ body section#section_definition div a{
     width: 250px;
     height: 55px;
     margin-left: 100px;
-    font-size: 32px;
-    font-family: poppins;
+    font-size: 28px;
     border: 1px;
     border-radius: 0%;
     text-align: center;
     border-radius: 8px;
-    transition: background-color .4s;
-    transition: color .4s;
+    transition: all .4s;
 }
 
 body section#section_definition div a:hover{
@@ -505,10 +503,28 @@ section#questionSearch a#yourQuestion:hover{
     margin-top: 100px;
     width: 70%;
     place-items: center;
-    border: 2px solid white;
+    border: 3px solid white;
+    text-align: center;
 }
 
 .text-box{
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 80%;
+    color: white;
+}
+
+.text-box#h2{
+
+}
+
+#randomButton{
+    background: linear-gradient(#50D8A7, #FBFF3F);
+    color: black;
+    width: 250px;
+    height: 55px;
+    font-size: 28px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all .4s;
 }
