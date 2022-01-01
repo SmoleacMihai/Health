@@ -497,6 +497,7 @@ section#questionSearch a#yourQuestion:hover{
     margin-bottom: 20px;
     width: 80%;
     color: white;
+    text-align: center;
 }
 
 .text-box#h2{
@@ -504,16 +505,21 @@ section#questionSearch a#yourQuestion:hover{
 }
 
 #randomButton{
-    background: linear-gradient(#50D8A7, #FBFF3F);
+    background: linear-gradient(to right,#50D8A7,#9AE97A, #FBFF3F);
+    background-size: 200%;
     color: black;
     width: 250px;
-    height: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 28px;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: .5s;
 }
 
 #randomButton:hover{
-    background-color: linear-gradient(#FBFF3F, #50D8A7);
+    background-position-x: 100%;
 }
 

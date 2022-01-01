@@ -3,7 +3,7 @@ function getRandomNumberBetween(min,max){
 }
 let x = getRandomNumberBetween(1,10)
 
-// for (var i = 1; i < 9; i++) {
+// for (var i = 0; i < 11; i++) {
 //     cleaner = document.getElementById("content"+i)
 //     cleaner.style.display = "none";
 //  }
