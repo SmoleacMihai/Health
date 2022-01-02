@@ -42,6 +42,10 @@ header#main_h a figure figcaption{
     color: white;
 }
 
+header#main_h a.headerTitle{
+    width: 310px;
+}
+
 header#main_h a figure img{
     width: 45px;
     height: 45px;
