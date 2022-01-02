@@ -1,16 +1,11 @@
+let usedRandom = 11
+let curentRandom = 0
+
 function getRandomNumberBetween(min,max){
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-for (var i = 0; i < 11; i++) {
-    cleaner = document.getElementById("content"+i)
-    cleaner.style.display = "none";
- }
-
-let usedRandom = 11
-let curentRandom = 0
-
- function unhider(){
+function unhider(){
     let clear = document.getElementById("content0")
     clear.style.display = "none"
     curentRandom = getRandomNumberBetween(1,10)
@@ -24,4 +19,10 @@ let curentRandom = 0
     console.log(curentRandom)
     usedRandom = curentRandom
  }
+
+for (var i = 0; i < 11; i++) {
+    cleaner = document.getElementById("content"+i)
+    cleaner.style.display = "none";
+ }
+
  document.getElementById("randomButton").onclick = unhider() 
