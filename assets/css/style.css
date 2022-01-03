@@ -530,7 +530,7 @@ section#questionSearch a#yourQuestion:hover{
 /*Footer*/
 footer{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 330px 1fr;
     background-color: #1B1B1B;
     margin-top: 40px;
 }
@@ -544,17 +544,38 @@ footer{
    display: grid;
    grid-template-columns: 45px 280px;
    margin: 0%;
-   width: 315px;
+   width: 320px;
 }
 
 .innerFooter1 a figure figcaption{
     font-size: 34px;
     font-weight: 400;
-    width: 270px;
+    width: 250px;
     color: white;
+    text-align: end;
 }
 
 .innerFooter1 a figure img{
     width: 45px;
     height: 45px;
+}
+
+#underFooterTitle{
+    display: grid;
+    grid-template-columns: auto 15px auto;
+    margin-left: 45px;
+}
+
+#underFooterTitle a{
+    color: white;
+    font-family: Times;
+    font-weight: 50;
+}
+
+#dot{
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+    place-self: center;
 }
