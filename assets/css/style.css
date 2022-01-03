@@ -38,7 +38,6 @@ header#main_h a figure figcaption{
     font-size: 34px;
     font-weight: 400;
     width: 270px;
-    margin-left: 15px;
     color: white;
 }
 
@@ -529,4 +528,33 @@ section#questionSearch a#yourQuestion:hover{
 }
 
 /*Footer*/
+footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #1B1B1B;
+    margin-top: 40px;
+}
 
+.innerFooter1{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.innerFooter1 a figure{
+   display: grid;
+   grid-template-columns: 45px 280px;
+   margin: 0%;
+   width: 315px;
+}
+
+.innerFooter1 a figure figcaption{
+    font-size: 34px;
+    font-weight: 400;
+    width: 270px;
+    color: white;
+}
+
+.innerFooter1 a figure img{
+    width: 45px;
+    height: 45px;
+}

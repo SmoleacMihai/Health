@@ -1,6 +1,8 @@
+// Variables
 let usedRandom = 11
 let curentRandom = 0
 
+//Functions
 function getRandomNumberBetween(min,max){
     return Math.floor(Math.random()*(max-min+1)+min);
 }
@@ -20,6 +22,7 @@ function unhider(){
     usedRandom = curentRandom
  }
 
+ //main program
 for (var i = 0; i < 11; i++) {
     cleaner = document.getElementById("content"+i)
     cleaner.style.display = "none";
