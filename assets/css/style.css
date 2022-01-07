@@ -52,7 +52,7 @@ header#main_h a figure img{
 
 header#main_h nav{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(4, auto);
     align-items: center;
     justify-content: start;
     column-gap: 100px;
@@ -107,14 +107,15 @@ section#main_s div a{
     font-size: 32px;
     background-color: #50D8A7;
     width: 270px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
     border-radius: 8px;
-    transition: border-radius 1.5s;
 }
 
 section#main_s div a:hover{
     color: black;
     border: 1px;
-    border-radius: 24px;
     background-color: #FBFF3F;
 }
 
@@ -602,3 +603,5 @@ footer{
     width: 45px;
     height: auto;
 }
+
+/*About us page*/
