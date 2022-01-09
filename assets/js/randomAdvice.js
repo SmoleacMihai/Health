@@ -13,12 +13,9 @@ function unhider(){
     curentRandom = getRandomNumberBetween(1,10)
     while(curentRandom == usedRandom){
         curentRandom = getRandomNumberBetween(1,10)
-        console.log("There was a identical number")
     }
     element = document.getElementById("content"+curentRandom)
     element.style.display = "block";
-    console.log("Function did something")
-    console.log(curentRandom)
     usedRandom = curentRandom
  }
 
