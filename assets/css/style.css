@@ -411,7 +411,7 @@ section#questionSearch a#yourQuestion{
     width: 250px;
     height: 45px;
     font-size: 26px;
-    color: white;
+    color: black;
     background-color: #50D8A7;
     border-radius: 8px;
     margin-right: 30px;
@@ -420,6 +420,7 @@ section#questionSearch a#yourQuestion{
 
 section#questionSearch a#yourQuestion:hover{
     background-color: #1B1B1B;
+    color: white;
 }
 
 [type="text"] {

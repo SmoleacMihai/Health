@@ -17,7 +17,7 @@ function unhider(){
     element = document.getElementById("content"+curentRandom)
     element.style.display = "block";
     usedRandom = curentRandom
- }
+}
 
  //main program
 for (var i = 0; i < 11; i++) {
