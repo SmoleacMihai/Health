@@ -5,8 +5,13 @@ body{
     overflow-x: hidden;
 }
 
+a, div, h1, h2, h3, p{
+    font-family: poppins;
+}
+
 a{
     text-decoration: none;
+    text-align: center;
 }
 
 /*First page*/
@@ -19,44 +24,48 @@ header#main_h{
     margin-top: 25px;
     margin-left: 40px;
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-header#main_h figure{
+header#main_h a figure{
    display: grid;
-   grid-template-columns: 45px auto;
-   margin: 0;
+   grid-template-columns: 45px 280px;
+   margin: 0%;
+   width: 315px;
 }
 
-header#main_h figure figcaption{
-    font-family: poppins ;
+header#main_h a figure figcaption{
     font-size: 34px;
     font-weight: 400;
-    width: 300px;
-    margin-left: 15px;
+    width: 270px;
     color: white;
 }
 
-header#main_h figure img{
+header#main_h a.headerTitle{
+    width: 310px;
+}
+
+header#main_h a figure img{
     width: 45px;
     height: 45px;
 }
 
 header#main_h nav{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(4, auto);
     align-items: center;
+    justify-content: start;
+    column-gap: 100px;
 }
 
 header#main_h nav a{
-    font-family: poppins;
     font-size: 20px;
     font-weight: 400;
     color: white;
 }
 
 header#main_h nav a:hover{ 
-  color: #FBFF3F;
+     color: #FBFF3F;
 }
 
 section#main_s{
@@ -66,7 +75,7 @@ section#main_s{
 }
 
 section#main_s img{
-    width:500px ;
+    width: 500px;
     height: 400px; 
     margin-left: 70px;
 }
@@ -74,11 +83,11 @@ section#main_s img{
 section#main_s div{
     display: grid;
     grid-template-rows: 90px 250px; 
+    margin-left: 15px;
 }
 
 section#main_s div h1{
     font-size: 54px;
-    font-family: poppins;
     font-weight: 400;
     margin: 0px;
     color: white;
@@ -88,7 +97,6 @@ section#main_s div h3{
     margin: 0%;
     color: white;
     font-size: 30px;
-    font-family: poppins;
     font-style: normal;
     font-weight: normal;
 }
@@ -97,26 +105,18 @@ section#main_s div a{
     margin-left: 3px;
     color: #ffffff;
     font-size: 32px;
-    font-family: poppins;
-    border: 1px;
-    border-radius: 0%;
     background-color: #50D8A7;
     width: 270px;
-    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
     border-radius: 8px;
-    transition: border-radius 1.5s;
 }
 
 section#main_s div a:hover{
-    margin-left: 3px;
     color: black;
-    font-size: 32px;
-    font-family: poppins;
     border: 1px;
-    border-radius: 24px;
     background-color: #FBFF3F;
-    width: 270px;
-    text-align: center;
 }
 
 body img#crug1{
@@ -139,7 +139,6 @@ body div#features_buttons h2#head_txt{
     grid-column-end: 4;
     margin-top: 35px;
     margin-left: 100px;
-    font-family: poppins;
     font-size: 44px;
     font-weight: 400;
     color: white;
@@ -179,25 +178,16 @@ body div#features_buttons a figure img{
 }
 
 body div#features_buttons a figure:hover img{
-    width: 150px;
-    height: 150px;
-    margin-top: 30px;
     filter: invert(100%);
 }
 
 body div#features_buttons a figure figcaption{
-    text-align: center;
-    font-family: poppins;
     font-size: 30px;
     font-weight: 700;
     color: white;
 }
 
 body div#features_buttons a figure:hover figcaption{
-    text-align: center;
-    font-family: poppins;
-    font-size: 30px;
-    font-weight: 700;
     color: #2B2B2B;
 }
 
@@ -219,7 +209,6 @@ body section#section_definition div h2{
     grid-column-end: 3;
     margin-top: 35px;
     margin-left: 100px;
-    font-family: poppins;
     font-size: 44px;
     font-weight: 400;
     color: white;
@@ -228,7 +217,6 @@ body section#section_definition div h2{
 
 body section#section_definition div p{
     margin-left: 100px;
-    font-family: poppins;
     font-size: 24px;
     font-weight: 400;
     color: white;
@@ -249,26 +237,13 @@ body section#section_definition div a{
     height: 55px;
     margin-left: 100px;
     font-size: 32px;
-    font-family: poppins;
-    border: 1px;
-    border-radius: 0%;
-    text-align: center;
     border-radius: 8px;
-    transition: background-color .4s;
-    transition: color .4s;
+    transition: all .4s;
 }
 
 body section#section_definition div a:hover{
     color: white;
     background-color: #1B1B1B;
-    width: 250px;
-    height: 55px;
-    margin-left: 100px;
-    font-size: 32px;
-    font-family: poppins;
-    border: 20px;
-    text-align: center;
-    border-radius: 8px;
 }
 
 /*Section methods of meditation*/
@@ -289,7 +264,6 @@ body section#section_methods h2{
     grid-column-end: 3;
     margin-top: 35px;
     margin-left: 100px;
-    font-family: poppins;
     font-size: 44px;
     font-weight: 400;
     color: black;
@@ -297,7 +271,6 @@ body section#section_methods h2{
 }
 
 body section#section_methods p{
-    font-family: poppins;
     font-size: 24px;
     font-weight: 400;
     color: black;
@@ -306,7 +279,6 @@ body section#section_methods p{
 }
 
 body section#section_methods p.container-right{
-    font-family: poppins;
     font-size: 24px;
     font-weight: 400;
     color: black;
@@ -316,7 +288,6 @@ body section#section_methods p.container-right{
 }
 
 body section#section_methods p.container-left{
-    font-family: poppins;
     font-size: 24px;
     font-weight: 400;
     color: black;
@@ -340,25 +311,13 @@ body section#section_methods div a{
     width: 250px;
     height: 55px;
     font-size: 32px;
-    font-family: poppins;
-    border: 1px;
-    text-align: center;
     border-radius: 8px;
-    transition: background-color .4s;
-    transition: color .4s;
+    transition: all .4s;
 }
 
 body section#section_methods div a:hover{
     color: white;
     background-color: #1B1B1B;
-    width: 250px;
-    height: 55px;
-    font-size: 32px;
-    font-family: poppins;
-    border: 20px;
-    border-radius: 0%;
-    text-align: center;
-    border-radius: 8px;
 }
 
 /*section benefits*/
@@ -379,7 +338,6 @@ body section#section_benefits h2{
     grid-column-end: 5;
     margin-top: 35px;
     margin-left: 100px;
-    font-family: poppins;
     font-size: 44px;
     font-weight: 400;
     color: black;
@@ -400,7 +358,6 @@ body section#section_benefits div figure img{
 
 body section#section_benefits div figure figcaption{
     text-align: center;
-    font-family: poppins;
     font-size: 30px;
     font-weight: 700;
     color: black;
@@ -416,37 +373,374 @@ body section#section_benefits div a{
     width: 250px;
     height: 55px;
     font-size: 32px;
-    font-family: poppins;
-    border: 1px; 
-    text-align: center;
     border-radius: 8px;
-    transition: background-color .4s;
-    transition: color .4s;
+    transition: all .4s;
 }
 
 body section#section_benefits div a:hover{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    justify-self: end;
-    margin-right: 100px;
     color: black;
     background-color: #50D8A7;
-    width: 250px;
-    height: 55px;
-    font-size: 32px;
-    font-family: poppins;
-    border: 1px;
-    text-align: center;
-    border-radius: 8px; 
 }
 
-#scroll_up{
-    top: 50px;
-    right: 10px;
-    position: fixed;
-    width: 80px;
-    height: 20px;
+footer{
+    width: 100%;
+    background-color: #2B2B2B;
+}
+
+/*Q&A page*/
+
+section#questionSearch{
+    margin-top: 30px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 720px 1fr;
+}
+
+section#questionSearch input{
+    height: 35px;
+    border-radius: 10px;
+    background-color: #1B1B1B;
+    color:white;
+    font-size: 20px;
+    border-color: transparent;
+    margin-left: 60px;
+}
+
+section#questionSearch a#yourQuestion{
+    justify-self: flex-end;
+    width: 250px;
+    height: 45px;
     font-size: 26px;
-    font-family: poppins;
-    background-color: #e62739;
+    color: black;
+    background-color: #50D8A7;
+    border-radius: 8px;
+    margin-right: 30px;
+    transition: all, .1s;
+}
+
+section#questionSearch a#yourQuestion:hover{
+    background-color: #1B1B1B;
+    color: white;
+}
+
+[type="text"] {
+    padding: 4px;
+    -webkit-box-shadow: 0 0 3px 2px #1B1B1B;
+    -moz-box-shadow: 0 0 3px 2px #1B1B1B;
+    box-shadow: 0 0 3px 2px #1B1B1B;
+    border: 1px solid gray; 
+    transition: all .3s;
+}
+[type="text"]:focus {
+    outline: none; 
+    border: 2px solid;
+    -webkit-box-shadow: 0 0 3px 2px #50D8A7;
+    box-shadow: 0 0 3px 2px #50D8A7;
+    border-color: #50D8A7;
+}
+
+#popularQuestions{
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+}
+
+#popularQuestionTitle{
+    margin-top: 35px;
+    font-size: 44px;
+    font-weight: 400;
+    color: white;
+    justify-self: start;
+}
+
+#popularQuestions{
+    font-size: 24px;
+    margin-left: 100px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+#popularQuestions p{
+    margin-left: 15px;
+}
+
+.darkQuestion{
+    background-color: #1B1B1B;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    transition: all .3s;
+}
+
+.darkQuestion:hover{
+    font-size: 26px;
+}
+
+.colorfulQuestion{
+    background: linear-gradient(#50D8A7, #FBFF3F) ;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s;
+}
+
+.colorfulQuestion:hover{
+    font-size: 26px;
+}
+
+/*Random advice page*/
+#randomSection{
+    display: grid;
+    margin: auto;
+    margin-bottom: 250px;
+    margin-top: 100px;
+    width: 70%;
+    place-items: center;
+    border: 3px solid white;
+}
+
+.text-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 170px;
+    color: white;
+    text-align: center;
+}
+
+.text-box h2{
+    font-size: 32px;
+}
+
+#randomButton{
+    background: linear-gradient(to right,#50D8A7,#9AE97A, #FBFF3F);
+    background-size: 200%;
+    color: black;
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 28px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#randomButton:hover{
+    background-position-x: 100%;
+}
+
+/*Footer*/
+footer{
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    background-color: #1B1B1B;
+    padding-bottom: 20px;
+}
+
+.innerFooter1{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.innerFooter1 a figure{
+   display: grid;
+   grid-template-columns: 45px 280px;
+   margin: 0%;
+   width: 320px;
+   margin-bottom: 10px;
+}
+
+.innerFooter1 a figure figcaption{
+    font-size: 34px;
+    font-weight: 400;
+    width: 250px;
+    color: white;
+    text-align: end;
+}
+
+.innerFooter1 a figure img{
+    width: 45px;
+    height: 45px;
+}
+
+#underFooterTitle{
+    display: grid;
+    grid-template-columns: auto 15px auto;
+    margin-left: 45px;
+}
+
+#underFooterTitle a{
+    color: white;
+    font-family: Times;
+    font-weight: 50;
+}
+
+#dot{
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+    place-self: center;
+}
+
+.innerFooter2{
+    color: white;
+    display: grid;
+    grid-template-rows: auto auto 45px;
+    justify-items: end;
+    margin-right: 30px;
+    margin-top: 25px;
+}
+
+#socialMedia{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 15px;
+}
+
+#socialMedia a img{
+    width: 45px;
+    height: auto;
+}
+
+/*About us page*/
+#AboutUsSection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 142px);
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 40px;
+    color: white;
+    place-items: center;
+    margin-bottom: 205px;
+}
+
+.aboutTxt{
+    width: fit-content;
+    position: relative;
+    animation-name: Element;
+    animation-duration: 2s; 
+}
+
+#firstElementGoal{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+@keyframes Element{
+    0%{font-size: 1px;}
+    100%{font-size: 40px;}
+}
+
+#secondElementGoal{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #50D8A7;
+    animation-name: Element2;
+    animation-duration: 4s;
+}
+
+@keyframes Element2{
+    from{
+        color: white;
+        font-size: 1px;
+    }
+    to{
+        color: #50D8A7;
+        font-size: 40px;
+    }
+}
+
+#thirdElementGoal{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    color: #FBFF3F;
+    animation-name: Element3;
+    animation-duration: 6s;
+}
+
+@keyframes Element3{
+    from{
+        color: white;
+        font-size: 1px;
+    }
+    to{
+        color: #FBFF3F;
+        font-size: 40px;
+    }
+}
+
+#whyUs{
+    background-image: url("../images/background-img.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+#gridAboutUs{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 40px;
+    row-gap: 30px;
+}
+
+#line{
+    height: 3px;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#whyListZone{
+    background-color: rgba(27, 27, 27, 0.7);
+    border: 3px solid white;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 30px;
+    margin-left: 100px;
+    font-size: 28px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: start;
+    align-self: center;
+}
+
+#gridAboutUs h2{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 44px;
+    font-weight: 400;
+    color: white;
+}
+
+#gridAboutUs img{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 500px;
+    height: auto;
+    place-self: center;
+}
+
+.mt50{
+    margin-top: 50px;
 }
