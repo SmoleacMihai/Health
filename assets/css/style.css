@@ -402,7 +402,7 @@ section#questionSearch input{
     background-color: #1B1B1B;
     color:white;
     font-size: 20px;
-    border-color: none;
+    border-color: transparent;
     margin-left: 60px;
 }
 
@@ -435,14 +435,11 @@ section#questionSearch a#yourQuestion:hover{
     outline: none; 
     border: 2px solid;
     -webkit-box-shadow: 0 0 3px 2px #50D8A7;
-    -moz-box-shadow: 0 0 3px 2px #50D8A7;
-    box-shadow: 0 0 3px 2px #50D8A7;
     border-color: #50D8A7;
 }
 
 #popularQuestions{
     display: grid;
-    grid-template-columns: 1;
     grid-template-rows: repeat(6, auto);
 }
 
